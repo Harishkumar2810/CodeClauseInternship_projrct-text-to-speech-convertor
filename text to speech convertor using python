@@ -1,0 +1,9 @@
+from gtts import gTTS
+import os
+text1=input("Give Text to Hear Speech: ")
+myText="Hi Code clause, Welcome i am using python to develop speech convertor"
+language='en'
+output=gTTS(text=myText+text1, lang=language, slow=False)
+output.save("output.mp3")
+os.system("start output.mp3")
+
